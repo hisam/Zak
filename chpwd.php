@@ -14,15 +14,15 @@ New password:  <p><input type="password" name="npwd"/></p>
 
 <?php
 
-$user="xth_3647264";
+$user="hisam";
 $user=trim($user);
-$pass="zakware";
+$pass="hisql";
 $pass=trim($pass);
-$db = "xth_3647264_zak";
+$db = "hiss";
 $db=trim($db);
 $opwd=$_POST['opwd'];
 $npwd=$_POST['npwd'];
-$link = mysql_connect( "sql302.xtreemhost.com", $user, $pass );
+$link = mysql_connect( "localhost", $user, $pass );
 //if ( ! $link ) {
 //die( "Couldn't connect to MySQL: ".mysql_error() );
 //}

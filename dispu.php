@@ -10,10 +10,10 @@ print "$trim" ?>
 <center>
 <h3>
 <?php 
-$user = "xth_3647264"; 
-$pass = "zakware"; 
-$db = "xth_3647264_zak"; 
-$link = mysql_connect( "sql302.xtreemhost.com", $user, $pass ); 
+$user = "hisam"; 
+$pass = "hisql"; 
+$db = "hiss"; 
+$link = mysql_connect( "localhost", $user, $pass ); 
 if ( ! $link ) { 
 die( "Couldn't connect to MySQL: ".mysql_error() ); 
 } 
@@ -63,10 +63,10 @@ print " <br><br>";
 <p><input type="hidden" name="amt" value="<?php 
 
 
-$user = "xth_3647264";
-$pass = "zakware";
-$db = "xth_3647264_zak";
-$link = mysql_connect( "sql302.xtreemhost.com", $user, $pass );
+$user = "hisam";
+$pass = "hisql";
+$db = "hiss";
+$link = mysql_connect( "localhost", $user, $pass );
 if ( ! $link ) {
 die( "Couldn't connect to MySQL: ".mysql_error() );
 }
@@ -102,10 +102,10 @@ mysql_close( $link );
 <p><input type="hidden" name="up2" value="<?php
 
 
-$user = "xth_3647264";
-$pass = "zakware";
-$db = "xth_3647264_zak";
-$link = mysql_connect( "sql302.xtreemhost.com", $user, $pass );
+$user = "hisam";
+$pass = "hisql";
+$db = "hiss";
+$link = mysql_connect( "localhost", $user, $pass );
 if ( ! $link ) {
 die( "Couldn't connect to MySQL: ".mysql_error() );
 }
@@ -143,10 +143,10 @@ mysql_close( $link );
 <p><input type="hidden" name="detls" value="<?php
 
 
-$user = "xth_3647264";
-$pass = "zakware";
-$db = "xth_3647264_zak";
-$link = mysql_connect( "sql302.xtreemhost.com", $user, $pass );
+$user = "hisam";
+$pass = "hisql";
+$db = "hiss";
+$link = mysql_connect( "localhost", $user, $pass );
 if ( ! $link ) {
 die( "Couldn't connect to MySQL: ".mysql_error() );
 }

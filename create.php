@@ -24,14 +24,14 @@ Details:
 
 
 <?php
-  $user = "xth_3647264";
-  $pass = "zakware";
-  $db = "xth_3647264_zak";
-  $link = mysql_connect( "sql302.xtreemhost.com", $user, $pass );
+  $user = "hisam";
+  $pass = "hisql";
+  $db = "hiss";
+  $link = @mysql_connect( "localhost", $user, $pass );
   if ( ! $link ) {
   die( "Couldn't connect to MySQL: ".mysql_error() );
       }
-  mysql_select_db( $db )
+  @mysql_select_db( $db )
   or die ( "Couldn't open $db: ".mysql_error() );
   $mob=$_GET['mob'];
   $amt=$_GET['amt'];

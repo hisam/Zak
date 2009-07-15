@@ -1,14 +1,13 @@
 <?php
 ob_start();
-$user="xth_3647264";
+$user="hisam";
 $user=trim($user);
-$pass="zakware";
+$pass="hisql";
 $pass=trim($pass);
-$db = "xth_3647264_zak";
+$db = "hiss";
 $db=trim($db);
 $pwd=trim($_POST['pwd']);
-$local="sql302.xtreemhost.com";
-$link = mysql_connect( $local, $user, $pass );
+$link = mysql_connect( "localhost", $user, $pass );
 //if ( ! $link ) {
 //die( "Couldn't connect to MySQL: ".mysql_error() );
 //}

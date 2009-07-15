@@ -8,10 +8,10 @@ Account update Status
 <center>
 <h2>
 <?php
-//Sent to zak
-$user = "xth_3647264";
-$pass = "zakware";
-$db = "xth_3647264_zak";
+
+$user = "hisam";
+$pass = "hisql";
+$db = "hiss";
 
 
 $lin=$_POST['lin'];
@@ -27,7 +27,7 @@ $up2=$_POST['up2'];
 
 
 //print $adds;
-$link = @mysql_connect( "sql302.xtreemhost.com", $user, $pass );
+$link = @mysql_connect( "localhost", $user, $pass );
 if ( ! $link ) {
 die( "Couldn't connect to MySQL: ".mysql_error() );
  }
@@ -45,7 +45,7 @@ $res=$amt+$adds;
 //print "$lin";
 $qu=mysql_query("UPDATE zak SET amt ='$res'   WHERE mob='$lin'");
 $dt=date("r",time());
-$upd="Added "."$adds"." to "."$amt"." on "."$dt";
+$upd="Added "."$adds"." on "."$dt";
 $upd="$upd"."<br>"."$up2"."<br>";
 mysql_query("UPDATE zak SET up2date ='$upd'   WHERE mob='$lin'");
 
@@ -61,7 +61,7 @@ $res2=$amt-$mins;
 $qu=mysql_query("UPDATE zak SET amt ='$res2'   WHERE mob='$lin'");
 
 $dt=date("r",time());
-$upd="Minused "."$mins"." from "."$amt"." on "."$dt";
+$upd="Minused "."$mins"." on "."$dt";
 $upd="$upd"."<br>"."$up2"."<br>";
 mysql_query("UPDATE zak SET up2date ='$upd'   WHERE mob='$lin'");
 
